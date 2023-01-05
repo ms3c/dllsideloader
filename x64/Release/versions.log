@@ -1,0 +1,9 @@
+﻿  dllmain.cpp
+C:\Users\emsec\source\repos\versions\versions\dllmain.cpp(47,12): warning C4101: 'threadHandle': unreferenced local variable
+     Creating library C:\Users\emsec\source\repos\versions\x64\Release\versions.lib and object C:\Users\emsec\source\repos\versions\x64\Release\versions.exp
+  Generating code
+  9 of 34 functions (26.5%) were compiled, the rest were copied from previous compilation.
+    8 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  versions.vcxproj -> C:\Users\emsec\source\repos\versions\x64\Release\versions.dll

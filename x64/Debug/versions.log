@@ -1,0 +1,3 @@
+﻿  dllmain.cpp
+C:\Users\emsec\source\repos\versions\versions\dllmain.cpp(49,12): warning C4101: 'threadHandle': unreferenced local variable
+  versions.vcxproj -> C:\Users\emsec\source\repos\versions\x64\Debug\versions.dll
